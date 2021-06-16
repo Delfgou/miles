@@ -1,0 +1,11 @@
+.vertical-menu a {
+    display: block; /* Make the links appear below each other */
+  }
+  
+.vertical-menu a:hover {
+    color: red;
+  }
+  
+.vertical-menu a.active {
+    color: blue;
+  }
