@@ -15,3 +15,7 @@
 .vertical-menu a.active {
     color: blue;
   }
+
+.global {
+  cursor: url('../assets/black-hole.png'), auto;
+}
