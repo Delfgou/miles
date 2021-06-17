@@ -1,7 +1,8 @@
 <div class="global">
+  
   <div class="menu">
-    <button mat-button [matMenuTriggerFor]="animals"><mat-icon>menu</mat-icon></button>
-    <mat-menu #animals="matMenu">
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon svgIcon="menu-slanting"></mat-icon></button>
+    <mat-menu #menu="matMenu">
       <button mat-menu-item routerLink="/home">Home</button>
       <button mat-menu-item [matMenuTriggerFor]="bands">bands</button>
       <button mat-menu-item>Konzerte</button>

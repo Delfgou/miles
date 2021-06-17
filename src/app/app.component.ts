@@ -8,10 +8,9 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'miles';
-  // constructor(private domSanitizer: DomSanitizer, private matIconRegistry: MatIconRegistry) {  
-  //   this.matIconRegistry
-  //     .addSvgIcon("menu-slanting", 
-  //       this.domSanitizer.bypassSecurityTrustResourceUrl('assets/hamburger-menu-slanting.svg'));
-  // }
+  constructor(private domSanitizer: DomSanitizer, private matIconRegistry: MatIconRegistry) {  
+    this.matIconRegistry
+      .addSvgIcon("menu-slanting", 
+        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/hamburger-menu-slanting.svg"));
+  }
 }
