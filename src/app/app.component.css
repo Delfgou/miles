@@ -1,7 +1,11 @@
 .global {
-  cursor: url('../assets/black-hole.png'), auto;
+  cursor: url('../assets/img/black-hole.png'), auto;
 }
 
 .menu {
   float: right;
+}
+
+button {
+  cursor: url('../assets/img/hand-finger-icon.png'), auto;
 }

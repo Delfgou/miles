@@ -11,6 +11,6 @@ export class AppComponent {
   constructor(private domSanitizer: DomSanitizer, private matIconRegistry: MatIconRegistry) {  
     this.matIconRegistry
       .addSvgIcon("menu-slanting", 
-        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/hamburger-menu-slanting.svg"));
+        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/img/hamburger-menu-slanting.svg"));
   }
 }
