@@ -1,11 +1,22 @@
 <div class="global">
+  <div class="menu">
+    <button mat-button [matMenuTriggerFor]="animals"><mat-icon>menu</mat-icon></button>
+    <mat-menu #animals="matMenu">
+      <button mat-menu-item routerLink="/home">Home</button>
+      <button mat-menu-item [matMenuTriggerFor]="bands">bands</button>
+      <button mat-menu-item>Konzerte</button>
+      <button mat-menu-item>Unterricht</button>
+      <button mat-menu-item>Diskographie</button>
+      <button mat-menu-item>Über mich</button>
+      <button mat-menu-item>Kontakt</button>
+    </mat-menu>
 
-  <h1>wil sämf gruusig isch</h1>
-  
-  <div class="vertical-menu">
-    <a routerLink="/home">Home</a>
-    <a routerLink="/wolfer">Wolfer</a>
-    <a routerLink="/against-the-void">Against the void</a>
+    <mat-menu #bands="matMenu">
+      <button mat-menu-item routerLink="/against-the-void">Against The Void</button>
+      <button mat-menu-item routerLink="/wolfer">wolfer</button>
+      <button mat-menu-item>done estuary</button>
+      <button mat-menu-item>Joe Volk</button>
+    </mat-menu>
   </div>
   
   <router-outlet ></router-outlet>

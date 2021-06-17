@@ -1,21 +1,7 @@
-.vertical-menu {
-    width: max-content;
-    border-style: groove;
-}
-
-.vertical-menu a {
-    display: block; /* Make the links appear below each other */
-    cursor: url('../assets/hand-finger-icon.png'), auto;
-  }
-  
-.vertical-menu a:hover {
-    color: red;
-  }
-  
-.vertical-menu a.active {
-    color: blue;
-  }
-
 .global {
   cursor: url('../assets/black-hole.png'), auto;
+}
+
+.menu {
+  float: right;
 }
