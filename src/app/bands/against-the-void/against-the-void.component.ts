@@ -13,10 +13,17 @@ export class AgainstTheVoidComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public download() {
+  public downloadPdf() {
     this.http.get('../assets/documents/miles_doc.pdf', {responseType: 'blob'})
     .subscribe(response => {
       this.downLoadFile(response, "application/pdf")
+    });
+  }
+
+  public downloadZip() {
+    this.http.get('../assets/documents/miles-download-folder.zip', {responseType: 'arraybuffer'})
+    .subscribe(response => {
+      this.downLoadFile(response, "application/zip")
     });
   }
 
