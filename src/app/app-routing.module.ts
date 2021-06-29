@@ -5,6 +5,7 @@ import { WolferComponent } from './bands/wolfer/wolfer.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'wolfer', component: WolferComponent },
   { path: 'against-the-void', component: AgainstTheVoidComponent },

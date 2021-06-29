@@ -1,5 +1,5 @@
 .global {
-  cursor: url('../assets/img/inverted-cursor.png'), auto;
+  cursor: url('../assets/img/util/inverted-cursor.png'), auto;
 }
 
 .menu {
@@ -7,5 +7,6 @@
 }
 
 button {
-  cursor: url('../assets/img/hand-finger-icon.png'), auto;
+  cursor: url('../assets/img/util/hand-finger-icon.png'), auto;
 }
+
